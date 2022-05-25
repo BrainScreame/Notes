@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="action_search_name">Search</string>
+    <string name="notes_toolbar_title">Notes</string>
+    <string name="fab_add_note_description">Add Note</string>
+    <string name="action_delete_note">Delete</string>
+    <string name="selected_text">Selected: %1$d</string>
+    <string name="empty_list_info">List is Empty</string>
+    <string name="text_page_title">Page Title</string>
+    <string name="text_page_description">Page Description</string>
+    <string name="action_save">Save</string>
+</resources>
