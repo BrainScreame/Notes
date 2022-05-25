@@ -70,7 +70,7 @@ class NoteEditFragment : Fragment() {
         this.closeKeyBoard()
         if (note != null) {
             if (binding.textNoteName.text.toString() != "" || binding.textNoteDescription.text.toString() != "") {
-                if (binding.textNoteName.text.toString() != note?.title &&
+                if (binding.textNoteName.text.toString() != note?.title ||
                     binding.textNoteDescription.text.toString() != note?.description
                 ) {
                     updateNote()

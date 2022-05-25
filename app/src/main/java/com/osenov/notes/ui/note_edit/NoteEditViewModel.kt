@@ -5,6 +5,7 @@ import androidx.lifecycle.viewModelScope
 import com.osenov.notes.data.model.Note
 import com.osenov.notes.domain.NoteEditUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -13,7 +14,7 @@ class NoteEditViewModel @Inject constructor(private val noteEditUseCase: NoteEdi
     ViewModel() {
 
     fun updateNote(note: Note) {
-        viewModelScope.launch {
+        GlobalScope.launch {
             noteEditUseCase.updateNote(note)
         }
     }
